@@ -32,6 +32,7 @@ Publish the website in the given URL.
 # name : prabanjan.m
 # reg_no : 24900428
 ## views.py:
+```
 from django.shortcuts import render
 
 def surfaceareaofrightcylinder(request):
@@ -57,8 +58,10 @@ def surfaceareaofrightcylinder(request):
         print('Area =', area)
     
     return render(request, 'index.html', context)
-  ##  urls.py:
-  from django.contrib import admin
+```
+##  urls.py:
+```
+from django.contrib import admin
 from django.urls import path
 from sq import views
 urlpatterns = [
@@ -66,7 +69,9 @@ urlpatterns = [
     path('surfaceareaofrightcylinder/',views.surfaceareaofrightcylinder,name="surfaceareaofrightcylinder"),
     path('',views.surfaceareaofrightcylinder,name="surfaceareaofrightcylinderroot")
 ]
+```
 ## index.html:
+```
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -169,6 +174,7 @@ urlpatterns = [
     </script>
 </body>
 </html>
+```
     
 # SERVER SIDE PROCESSING:
 ![Screenshot 2024-12-07 132400](https://github.com/user-attachments/assets/a7209db5-e2bb-41fa-abff-3347de92251f)
